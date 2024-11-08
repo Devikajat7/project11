@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <style>
+    .box{
+        width: 500px;
+        background-color: rgb(71,62,247);
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(1fr,1.5fr);
+        gap: 15px;
+        border: 20px solid rgb(0,110,255);
+    }
+    .box1{
+        background-color:lightblue;
+        text-align: center;
+        padding: 25px;
+        font-size: 28px;
+    }
+    #p1{
+        grid-column: 1/4;
+    }
+    #p2{
+        grid-row: 2/4;
+    }
+    #p4{
+        grid-column: 2/4;
+    }
+ </style> 
+</head> 
+<body>
+    <div class="box">
+        <div class="box1" id="p1">Header</div>
+        <div class="box1" id="p2">Menu</div>
+        <div class="box1" id="p3">Main</div>
+        <div class="box1">Right</div>
+        <div class="box1" id="p4">Footer</div>
+    </div>
+</body>
+</html>
